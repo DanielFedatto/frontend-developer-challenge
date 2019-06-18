@@ -3,4 +3,16 @@
 	src: url('../fonts/HelveticaNeue.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url('../fonts/HelveticaNeue-bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
 }
