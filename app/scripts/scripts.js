@@ -13,13 +13,13 @@ cardWrap.setAttribute('class', 'card_wrap');
 let request = new XMLHttpRequest();
 let baseURL = 'https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1'
 
-
 request.open('GET', baseURL, true);
 request.onload = function () {
     // Recebe os dados do JSON
     var data = JSON.parse(this.response);
-    // Cria o laço para mostrar o conteúdo
+    // Verifica se o status de request é 200
     if (request.status >= 200 && request.status < 400) {
+    // Cria o laço para mostrar o conteúdo
     $.each(data.products, function(product, content) {
         // Monta o HTMl da galeria de produtos
         const card = document.createElement('div');
