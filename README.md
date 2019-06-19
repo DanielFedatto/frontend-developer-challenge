@@ -20,4 +20,4 @@ yarn
 
 ---
 
-> Não consegui realizar desenvolver a função para o botão ainda mais produtos a tempo
+> Não consegui desenvolver a função para o botão ainda mais produtos a tempo
