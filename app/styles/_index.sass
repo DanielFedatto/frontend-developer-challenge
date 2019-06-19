@@ -1,26 +1,33 @@
 
 // Block content styles
-.products
+.products_section
     h5
         font-size: 18px
         font-weight: $bold
         text-align: center
         margin: 50px 0
 // Products style
-.product_wrap
+.card_wrap
     display: grid
     grid-template-columns: repeat(4, 200px)
     grid-gap: 41px
-.product_wrap_flex
+.card_wrap_flex
     width: 100%
     display: flex
     justify-content: center
-.product_card
+    align-items: center
+    flex-flow: column
+.card
     figure
         width: 200px
         height: 150px
         margin: 0
         border: solid 1px $color1
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            max-width: 100%
 .product_name
     margin-top: 14px
 .product_new_price
@@ -46,3 +53,53 @@
     text-align: center
     border: solid 1px $color2
     border-radius: 4px
+.btn-more
+    width: fit-content
+    margin: 43px 0 0 0
+    padding: 6px 36px
+    box-sizing: border-box
+    color: $color2
+    display: block
+    border: solid 1px $color2
+    border-radius: 4px
+    cursor: pointer
+.share_section
+    padding: 140px 0
+    h5
+        font-size: 18px
+        font-weight: $bold
+        text-align: center
+        margin: 0 0 45px 0
+    p
+        text-align: center
+#share_form
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 60px
+.input-field
+    position: relative
+    margin-top: 1rem
+    margin-bottom: 1rem
+    float: left
+    margin-right: 30px
+    &:last-child
+        margin-right: 0
+    input
+        width: 340px
+        height: 30px
+        box-sizing: border-box
+        padding: 0 .5rem
+.input-field > label
+    color: #9e9e9e
+    position: absolute
+    top: 0
+    left: 0
+    font-size: 1rem
+    font-size: 12px
+    cursor: text
+    text-align: initial
+    transform: translateY(-14px) scale(0.8)
+    transform-origin: 0 0
+    transition: transform .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out
