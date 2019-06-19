@@ -7,12 +7,13 @@ block content
         h5 Compartilhe a novidade
         p Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!
         .container
-            form#share_form(action="#")
+            form#share_form(action="#", onSubmit="return( check() )", name="frmSend")
+                .input-controll
+                    .input-field
+                        input#friend_name(type="text", name="name")
+                        label(for="#friend_name") Nome do seu amigo:
+                    .input-field
+                        input#friend_email(type="email", name="email", onblur="emailCheck();")
+                        label(for="#friend_email") E-mail:
                 .input-field
-                    input#friend_name(type="text")
-                    label(for="#friend_name") Nome do seu amigo:
-                .input-field
-                    input#friend_email(type="mail")
-                    label(for="#friend_email") E-mail:
-            .card_wrap_flex
-                a.btn-more(href="#") Enviar agora
+                    input.btn-send(name="submit", type="button", value="enviar")

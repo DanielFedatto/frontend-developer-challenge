@@ -85,5 +85,21 @@ request.onload = function () {
             app.appendChild(errorMessage);
     }
 }
-
 request.send();
+function check() {
+    if (document.forms[0].email.value.length == 0) {
+        alert('Por favor, informe o seu EMAIL.');
+        document.frmSend.email.focus();
+        return false;
+    }
+    return true;
+}
+function emailCheck(){
+    if( document.forms[0].email.value=="" 
+        || document.forms[0].email.value.indexOf('@')==-1 
+        || document.forms[0].email.value.indexOf('.')==-1 )
+        {
+           alert( "Por favor, informe um E-MAIL válido!" );
+           return false;
+        }
+}
